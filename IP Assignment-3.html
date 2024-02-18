@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vedant Pathare">
+    <link rel="stylesheet" href="IP Assignment-3.css">
+    <title>CSS Transformations</title>
+</head>
+<body>
+    <h1>CSS Transformations</h1>
+    <div class="draw-container">
+        <h2>Drag Area</h2>
+        <div class="area" ondragover="onDragOver(event)" ondrop="onDrop(event)">
+
+        </div>
+        <div class="controls">
+            <button onclick="translate2D()">Translate (10px, 10px)</button>
+            <button onclick="scale()">Scale (x2)</button>
+            <button onclick="rotate()">Rotate (20deg)</button>
+            <button onclick="reloadPage()" class="reset">Reset</button>
+        </div>
+    </div>
+    <h2 class="object-heading">Shapes</h2>
+    <div class="object-container">
+        <div class="square" id="1" draggable="true" ondragstart="onDragStart(event)">
+            
+        </div>
+        <div class="triangle" id="2" draggable="true" ondragstart="onDragStart(event)">
+
+        </div>
+        <div class="rectangle" id="3" draggable="true" ondragstart="onDragStart(event)">
+
+        </div>
+    </div>
+    <script src="IP Assignment-3.js"></script>
+</body>
+</html>
